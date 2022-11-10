@@ -56,3 +56,5 @@ This site is focused around reviewing the direct menu items from a restaurant, a
 MIT License
 
 ###### Copyright &copy; 2022 Kusal Tholka Mudalige, Mohamed Osman, Alaysia Veal, Thomalita Burbank
+
+
