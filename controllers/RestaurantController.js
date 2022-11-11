@@ -25,7 +25,7 @@ const UpdateRestaurant = async (req, res) => {
         { ...req.body },
         { where: { id: req.params.restaurant_id }, returning: true }
       )
-      res.send(post)
+      res.send(restaurant)
     } catch (error) {
       throw error
     }
