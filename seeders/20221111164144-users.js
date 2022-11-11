@@ -29,11 +29,15 @@ module.exports = {
           profilePic: 'https://wallpapercave.com/wp/Ggoin8Y.jpg',
           username: 'Squidward',
           email: 'squid@tentacles.com',
-          password: '1234'}
+          password: '1234'
         },
-        {}
-      ],
-      {}
+        {  
+          profilePic: 'http://clipartmag.com/images/spongebob-plankton-cliparts-35.jpg',
+          username: 'Plankton',
+          email: 'plankton@chumbucket.com',
+          password: '1234'
+      }
+    ]
     )
   },
 
