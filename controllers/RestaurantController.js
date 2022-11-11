@@ -39,4 +39,11 @@ const DeleteRestaurant = async (req, res) => {
       throw error
     }
   }
+
+module.exports = {
+    GetAllRestaurants,
+    CreateRestaurant,
+    UpdateRestaurant,
+    DeleteRestaurant
+}
   
