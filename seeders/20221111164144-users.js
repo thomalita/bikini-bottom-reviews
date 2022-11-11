@@ -14,13 +14,23 @@ module.exports = {
           password: '1234'
         },
         {
-          profilePic: '',
-          username: '',
-          email: 'bbass@pickles.com',
+          profilePic: 'https://i.ytimg.com/vi/ghvNSzGTQOg/maxresdefault.jpg',
+          username: 'Tom',
+          email: 'tomm@chocolate.com',
           password: '1234'
         },
-        {},
-        {},
+        {
+          profilePic: 'https://ih0.redbubble.net/image.365479721.3624/flat,800x800,075,f.jpg',
+          username: 'Hash Slinging Slasher',
+          email: 'hash@slasher.com',
+          password: '1234'
+        },
+        {
+          profilePic: 'https://wallpapercave.com/wp/Ggoin8Y.jpg',
+          username: 'Squidward',
+          email: 'squid@tentacles.com',
+          password: '1234'}
+        },
         {}
       ],
       {}
