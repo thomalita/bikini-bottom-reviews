@@ -14,6 +14,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
+          restaurantId: 2,
           name: 'Chum Bucket',
           address: '134 conch st',
           menu: 'Chum Bucket Specials',
