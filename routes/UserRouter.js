@@ -1,15 +1,17 @@
 const Router = require('express').Router()
-const controller = require('../controllers/UserController')
+const userController = require('../controllers/UserController')
+const authController = require('../controllers/AuthController')
 const middleware = require('../middleware')
 
-Router.get('/', controller.GetAllUsers)
-Router.post('/', controller.CreateUser)
+Router.get('/', userController.GetAllUsers)
+Router.post('/register', authController.Register)
+Router.post('/login', authController.Login)
 Router.put(
   '/:user_id',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.UpdateUser
+  userController.UpdateUser
 )
-Router.delete('/:user_id', controller.DeleteUser)
+Router.delete('/:user_id', userController.DeleteUser)
 
 module.exports = Router

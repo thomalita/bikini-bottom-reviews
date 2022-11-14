@@ -1,4 +1,5 @@
 const { User } = require('../models')
+const middleware = require('../middleware')
 
 const Login = async (req, res) => {
   try {
@@ -6,6 +7,7 @@ const Login = async (req, res) => {
       where: { email: req.body.email },
       raw: true
     })
+    console.log(user)
     if (
       user &&
       middleware.comparePassword(user.passwordDigest, req.body.password)
