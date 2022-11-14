@@ -9,6 +9,15 @@ const GetAllReviews = async (req, res) => {
   }
 }
 
+const getReviewByRestaurant = async (req, res) => {
+  try {
+    const reviews = await Review.findAll({where: {restaurantId: req.params.restaurant_id}})
+    res.send(reviews)
+  } catch (error) {
+    throw error
+  }
+}
+
 const CreateReview = async (req, res) => {
   try {
     const review = await Review.create({
@@ -47,5 +56,6 @@ module.exports = {
   GetAllReviews,
   CreateReview,
   UpdateReview,
-  DeleteReview
+  DeleteReview,
+  getReviewByRestaurant
 }

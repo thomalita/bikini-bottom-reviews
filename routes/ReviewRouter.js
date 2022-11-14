@@ -3,6 +3,7 @@ const controller = require('../controllers/ReviewController')
 const middleware = require('../middleware')
 
 Router.get('/', controller.GetAllReviews)
+Router.get('/:restaurant_id', controller.getReviewByRestaurant)
 Router.post(
   '/',
   middleware.stripToken,
