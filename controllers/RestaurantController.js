@@ -9,6 +9,15 @@ const GetAllRestaurants = async (req, res) => {
   }
 }
 
+const getRestaurantsById = async (req, res) => {
+  try {
+    const restaurant = await Restaurant.findAll({where: {id: req.params.restaurant_id}})
+    res.send(restaurant)
+  } catch (error) {
+    throw error
+  }
+}
+
 const CreateRestaurant = async (req, res) => {
   try {
     const restaurant = await Restaurant.create({ ...req.body })
@@ -47,5 +56,6 @@ module.exports = {
   GetAllRestaurants,
   CreateRestaurant,
   UpdateRestaurant,
-  DeleteRestaurant
+  DeleteRestaurant,
+  getRestaurantsById
 }
