@@ -6,6 +6,12 @@ const middleware = require('../middleware')
 Router.get('/', userController.GetAllUsers)
 Router.post('/register', authController.Register)
 Router.post('/login', authController.Login)
+Router.get(
+  '/session',
+  middleware.stripToken,
+  middleware.verifyToken,
+  authController.CheckSession
+)
 Router.put(
   '/:user_id',
   middleware.stripToken,
