@@ -9,12 +9,16 @@ module.exports = {
         {
           name: 'Krusty Krab',
           address: '124 conch st',
-          menu: 'Krusty Krab Specials'
+          menu: 'Krusty Krab Specials',
+          createdAt: new Date(),
+          updatedAt: new Date()
         },
         {
           name: 'Chum Bucket',
           address: '134 conch st',
-          menu: 'Chum Bucket Specials'
+          menu: 'Chum Bucket Specials',
+          createdAt: new Date(),
+          updatedAt: new Date()
         }
       ],
       {}
