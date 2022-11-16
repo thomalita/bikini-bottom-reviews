@@ -10,7 +10,7 @@ module.exports = {
           name: 'Krusty Krab',
           address: '124 conch st',
           image: 'https://wallpapercave.com/wp/wp4553572.png',
-          menu: 'Krusty Krab Specials',
+          menu: 'https://preview.redd.it/ovw7rbw7y6z81.jpg?auto=webp&s=bdc6e89ce2583d3155e0d5e92ba8ef71e3153b9f',
           createdAt: new Date(),
           updatedAt: new Date()
         },
