@@ -19,7 +19,7 @@ module.exports = {
           address: '134 conch st',
           image:
             'https://blogs.ubc.ca/rabiaalaqillahshazali/files/2013/11/Yes_finnaly_the_chum_bucket_is_mine1.jpg',
-          menu: 'https://i.pinimg.com/originals/53/cd/c0/53cdc0d50d91203e41c2b0ca61f7f517.jpg',
+          menu: 'https://static.wixstatic.com/media/81feaf_fd8de62ead460c9917c58936426f5f04.jpg/v1/fill/w_490,h_504,al_c,lg_1,q_80,enc_auto/81feaf_fd8de62ead460c9917c58936426f5f04.jpg',
           createdAt: new Date(),
           updatedAt: new Date()
         }
