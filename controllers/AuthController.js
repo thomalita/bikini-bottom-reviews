@@ -7,7 +7,6 @@ const Login = async (req, res) => {
       where: { email: req.body.email },
       raw: true
     })
-    console.log(user)
     if (
       user &&
       middleware.comparePassword(user.passwordDigest, req.body.password)
